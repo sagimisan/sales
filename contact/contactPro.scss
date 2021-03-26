@@ -1,0 +1,147 @@
+@import "../HF";
+
+body{
+   
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    position: relative;
+    main{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/img/logindescktopbackround.jpg);
+        background-size: cover;
+        background-position: center ;
+        height:150vh;
+    .contact{
+        position: absolute;
+        top:400px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:  white;
+        .formTitle{
+            font-size: 28px;
+            border-bottom: 6px solid #05f7ff;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        .textBox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid #05f7ff;
+            i{
+                width: 26px;
+                float: right;
+                text-align: center;
+            }
+        }
+        .input{
+            border: none;
+            outline: none;
+            background: none;
+            width:70%;
+            color: white;
+            font-size: 18px;
+            float: right;
+            margin: 0 10px;
+        }
+        .Login{
+            width: 100%;
+            background: none;
+            border: 2px solid #05f7ff;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+            &:hover{
+                color: black;
+                background: #03696d;
+                box-shadow: 0 0 10px #05f7ff,0 0 40px #05f7ff,0 0 80px #05f7ff;
+                transition: 1s;
+            }
+
+        }
+        .reset{
+            width: 35%;
+            background: none;
+            border: 2px solid #158f00;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+        }
+
+        .gender{
+            margin: 0 5px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .generdText{
+            margin: 5px;
+        }
+        .rateText{
+            margin: 5px;
+        }
+        
+        .info{
+            margin: 12px 0;
+            width: 96%;
+            height: 15vh;
+            outline: none;
+            background: none;
+            color: white;
+            font-size: 18px;
+            border: 3px solid #05f7ff;
+        }
+    }
+       
+    }
+}
+@media only screen and (min-width: 600px) {   
+    body{
+        main{
+            height: 150vh;
+        .contact{
+            top:450px;
+            .formTitle{
+                font-size: 35px;
+            }
+            .textBox{
+                font-size: 30px;
+
+                i{
+                    width: 36px;
+
+                }
+            }
+            .input{
+
+            }
+            .genderBotton{
+                width: 20PX;
+                height: 20PX;
+            }
+            .generdText{
+                font-size: 25px;
+            }
+            .Login{
+                font-size:30px;
+
+            }
+            .reset{
+                font-size: 30px;
+            }
+            .info{
+                width: 98%;
+                font-size: 30px;
+
+            }
+        }
+    }
+    }
+
+}

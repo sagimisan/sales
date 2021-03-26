@@ -1,0 +1,239 @@
+@import "../HF";
+
+body{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    
+    
+    main{
+        position: relative;
+        top:10vh;
+        height: 290vh;
+        
+        h1{
+            margin: 30px;
+            border-bottom: 3px solid rgb(97, 97, 223);
+        }
+        .sales{
+            justify-content: center;
+            position: absolute;
+            top: 30vh;
+            width: 100%;
+            display: grid;   
+            grid-template-areas: 
+            'd1'
+            'd2'
+            'd3'
+            'd4';
+            grid-gap: 10px;
+         
+            .des{
+                font-size: 17px;
+                color: rgb(144, 144, 223);
+                text-decoration: underline;
+            }
+            
+            .shoes{
+          
+                border-radius: 10px;
+                grid-area: d1;
+                width: 80vw;
+                height: 45vh;
+                min-width: 280px;
+                max-width: 420px;
+                background-image: url(/img/GIANNISshoes.jpg);
+                background-size:cover ;
+                background-position:center center ;
+          
+                        
+                    &:hover{
+             
+                        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/img/Nikeshoes.jpeg);
+                            
+                        }
+                      
+                    }
+                }
+                    
+                
+            
+            .cloth{
+                border-radius: 10px;
+                grid-area: d2 ;
+                width: 80vw;
+                height: 45vh;  
+                min-width: 280px;
+                max-width: 420px;              
+                background-image: url(/img/zion.jpg);
+                background-size:cover ;
+                background-position:center center ;
+           
+                    
+                &:hover{
+
+                    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/img/giannis.jpg);
+            
+                    }
+                  
+                }
+            
+            .balls{
+                border-radius: 10px;
+                grid-area: d3;
+                width: 80vw;
+                height: 45vh;
+                min-width: 280px;
+                max-width: 420px;
+                background-image: url(/img/balls.jpg);
+                background-size:cover ;
+                background-position:center center ;   
+                &:hover{
+
+                    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/img/ball.jpg);
+                    }
+                
+            }
+            .bags{
+                border-radius: 10px;
+                grid-area: d4;
+                width: 80vw;
+                height: 45vh;
+                min-width: 280px;
+                max-width: 420px;
+                background-image: url(/img/backpack1.jpg);
+                background-size:cover ;
+                background-position:center center ;
+                .producttitle{
+
+                    opacity: 0;
+                    color:white;
+                    font-size: 30px;
+                }
+                    
+                &:hover{
+
+                    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/img/backpack7.gif);
+                 }
+            }
+
+            a{
+                margin: 10px 0;
+                text-decoration: none;
+            }
+            
+        }
+    }
+
+
+
+@media only screen and (min-width: 600px) {   
+    body{
+
+          main{
+            top:20vh;
+              height: 150vh;
+            .sales{  
+                top:35vh ;
+                width: 100%;
+                text-align: right;           
+                grid-row-gap: 20px;
+                grid-template-columns: 50% 50%;
+                grid-template-areas: 
+                'd1 d2'
+                'd3 d4';
+                height: 90vh;
+                .des{
+                    text-align: center;
+                }
+                .producttitle{
+                    position: absolute;
+                    right: 10px;
+                }
+                .shoes{
+                    text-align: right;
+                    grid-area: d1;
+                    width:45vw;
+                    height:30vh;
+                    max-width:350px;
+                    position: absolute;
+                    right: 5%;
+                }
+                .cloth{
+                    grid-area: d2 ;
+                    width:45vw;
+                    height: 30vh;  
+                    max-width:350px;
+                    position: absolute;
+                    left: 5%;
+                }
+                .balls{
+                    grid-area: d3;
+                    width:45vw;
+                    height: 30vh;
+                    max-width:350px;
+                    position: absolute;
+                    right: 5%;
+                }
+                .bags{
+                    grid-area: d4;
+                    width: 45vw;
+                    height: 30vh;
+                    max-width:350px;
+                    position: absolute;
+                    left: 5%;
+                }
+
+            }
+        }
+    }
+}
+
+        
+@media only screen and (min-width: 992px) {   
+    body{
+
+        main{
+            height: 190vh;
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            .sales{
+                
+                height: 120vh;
+                .des{
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .shoes{
+                    
+                    height: 50vh;
+                    max-width: 750px;
+
+                }
+                .cloth{
+                    height: 50vh;
+                    max-width: 750px;
+                }
+                .balls{
+                    height: 50vh;
+                    max-width: 750px;
+                }
+                .bags{
+                    height: 50vh;
+                    max-width: 750px;
+
+                }
+
+            }
+            
+        }
+    }
+}

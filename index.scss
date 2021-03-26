@@ -1,0 +1,250 @@
+@import "../HF";
+
+body{
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    main{
+        height: 1200px;
+
+        .title{
+            color: white;
+            font-size:20px;
+            display: flex;
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            span{
+                color: #05f7ff;
+            }
+        }
+        .des{
+            margin-right: 10px;
+            border-bottom: 5px black solid;
+            text-align: right;
+            position: relative;
+            top: 150px;
+            h1{
+                font-size: 25px;
+                margin: 30px 0;
+            }
+            h2{
+                font-size: 20px;
+
+            }
+            p{
+                line-height: 40px;
+                font-size: 20px;
+                margin-top: 20px;
+                .btn{
+                    color: #05f7ff;
+                    width: 100px;
+                    border: 0px solid #fff;
+                    padding: 3px 3px;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    transition: 0.6s;
+                    &:hover{
+                        background-color: #05f7ff;
+                        color: black;
+                        box-shadow: 0 0 10px #05f7ff,0 0 40px #05f7ff,0 0 80px #05f7ff;
+                        transition:0.6s;
+                    }
+                }
+            }
+            .pic{
+                img{
+                    width: 300px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .client{
+            margin-right: 10px;
+            position: absolute;
+            top: 760px;
+        }
+        .comment{
+            width: 300px;
+            height: 260px;
+            background: #02bdc4;
+            display: flex;
+            color: black;
+            position: relative;
+            border-radius: 5px;
+            top: 300px;
+            right:10px;
+            p{
+                text-align: right;
+                position: absolute;
+                right: 125px;
+                width:170px;
+                line-height: 20px;
+                font-size: 15px;
+                padding: 5px 5px;
+            }
+            .img{
+                position: absolute;
+                background-color: white;
+                right: 5px;
+                top: -50px;
+                width: 120px;
+                height:120px;
+                border-radius: 5px;
+                img{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 100px;
+                }
+            }
+        }
+
+
+    }
+}
+ 
+@media only screen and (min-width: 600px) { 
+    body{
+  
+        main{
+            height: 900px;
+            .title{
+            }
+
+            .des{
+                margin: 10px;
+                h1{
+           
+                }
+                h2{
+                 
+                }
+                p{
+                    .btn{
+
+                        &:hover{
+                        }
+                    }
+                }
+                .pic{
+                    img{
+                        height: 155px;
+                        width: 280px;
+                        margin: 0px 3px;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+            }
+            .client{
+                margin: 10px;
+                top: 530px;
+            }
+            .comment{
+                width: 530px;
+                height: 170px;
+                top: 300px;
+                p{
+                   right: 150px;
+                    width:370px;
+                    font-size: 17px;
+                }
+                .img{
+                    top: -70px;
+                    width: 140px;
+                    height:140px;
+                    img{
+
+                        width: 120px;
+                    }
+                }
+            }    
+        }
+    }
+}
+@media only screen and (min-width: 992px) { 
+    body{
+        main{
+            height: 1000px;
+            .title{
+
+
+            }
+            
+            .des{
+                margin-right: 25px;
+                height: 480px;
+                h1,h2,p{
+                    width: 50%;
+                }
+                h1{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 23px;
+                 
+                }
+                p{
+                    font-weight: bold;
+                    font-size: 23px;
+                    .btn{
+
+                        &:hover{
+                        }
+                    }
+                }
+                .pic{
+                    
+                    img{
+                        position: absolute;
+                        left: 25px;
+                        height: auto;
+                        width: 450px;
+                        margin: 0px 3px;
+                    }
+                    .img1{
+                        top: 0;
+                    }
+                    .img2{
+                        top: 260px;                        
+                    }
+                }
+            }
+            .client{
+                margin: 20px;
+                top: 630px;
+            }
+            .comment{
+                top: 300px;
+                width: 680px;
+                height: 150px;
+                p{
+                    right: 180px;
+                    width:480px;
+                    font-size: 20px;
+                 }
+                 .img{
+                     position: absolute;
+                     right: 5px;
+                     top: -80px;
+                     width: 160px;
+                     height:160px;
+                     border-radius: 5px;
+                     img{
+                         position: absolute;
+                         right: 10px;
+                         top: 10px;
+                         width: 140px;
+                     }
+                 }
+            }
+
+        }
+    }
+}

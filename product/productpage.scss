@@ -1,0 +1,256 @@
+@import "../HF";
+
+
+body{
+   
+    text-align: center;
+    direction: rtl;
+    main{
+        background-color: rgb(27, 26, 26);
+        height:1450px;
+        color: white;
+
+        .productPick{
+            background-image: url(/img/lebronbackround1.jpg);
+            height: 400px;
+            width: 175px;
+            background-size: cover;
+            background-position: center ;
+            position: fixed;
+            top:280px;
+            left: 1%;
+            transform: translate(0,-50%);
+            transition: all 1s;
+            border-radius: 5px;
+            .list{
+                .productsocial{
+                    margin: 10px ;
+                    position: absolute;
+                    left: 0;
+                    top: 1%;
+                    opacity: 0;
+                    list-style: none;
+                    li{
+                        text-align: left;
+                        direction: ltr;
+                        i{
+                            color:rgb(149, 238, 201);
+                            span{
+                                margin: 0 5px;
+                                display: none;
+                                font-size: 17px;
+                                color: white;
+                            }
+                            &:hover{
+                                color:rgb(74, 116, 98);
+                                span{
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+            }
+            &:hover{
+                background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/img/lebron2.jpg);
+                .productsocial{
+                    opacity: 1;
+                }
+            }
+        
+    }
+        .productContact{
+            margin-top: 80px;
+            .title{
+                font-size: 23px;
+                color: rgb(97, 97, 223);
+                margin-bottom: 25px;
+            }
+            .price{
+                font-size: 15px;
+                .bigPrice{
+                    color: rgb(255, 72, 0);
+                    text-decoration: line-through;
+                }
+                .sale{
+                    margin-right: 10px;
+                    color:  #05f7ff;
+                    text-shadow:0 0 20px #05f7ff,0 0 50px #05f7ff,0 0 90px #05f7ff;
+                }
+
+            }
+            .order{
+                color: black;
+               margin-top: 20px;
+                .radio{
+                    margin-bottom: 20px;
+                    width: 80px;
+                    .yellow{
+                        background-color: yellow;
+                    }
+                    .purple{
+                        background-color: rgb(189, 63, 189);
+                    }
+                }
+                .btn{
+                    background: none;
+                    border: 2px solid #4caf50;
+                    color: white;
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                        background: #00ff08;
+                        box-shadow: 0 0 10px #00ff08,0 0 40px #00ff08,0 0 80px #00ff08;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+        .productinfo{
+            text-align: right;
+            width: 40%;
+            position: absolute;
+            top:40px;
+            right: 3%;
+            .trandLable{
+                text-align: center;
+                font-size: 30px;
+                border-bottom: 3px solid rgb(97, 97, 223);
+            }
+            .info{
+                margin-top: 40px;
+                font-size: 20px;
+            }
+            .moreInfo{
+                
+                margin-top: 80px;
+                border-top: 3px black solid;
+                h4{
+                    border-bottom: 3px solid rgb(97, 97, 223);
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) { 
+    body{
+        main{
+            height: 1300px;
+            .productPick{
+                height: 470px;
+                width: 215px;
+                top: 320px;
+                left: 5%;
+                .list{
+                    .productsocial{
+                        li{
+                            font-size: 20px;
+                            i{
+                                span{
+                                    font-size: 20px;
+                                }
+                                &:hover{
+                                    span{
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                }
+                &:hover{
+                    .productsocial{
+                    }
+                }
+            }
+            .productContact{
+                .title{
+                    font-size: 30px;
+                    
+                }
+                .price{
+                    font-size: 20px;
+                }
+                .order{
+                     .radio{
+                         width: 100px;
+                         font-size: 17px;
+                         .yellow{
+                         }
+                         .purple{
+                         }
+                     }
+                 }
+            }
+            .productinfo{
+                width: 40%;
+                top: 70px;
+                .trandLable{
+                }
+                .info{               
+
+                 }
+                .moreInfo{
+                    h4{
+                        font-size: 30px;
+
+                    }
+                    h5{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) { 
+    body{
+        main{
+
+            .productPick{
+                height: 530px;
+                width: 280px;
+                top: 340px;
+                left: 5%;
+            }
+            .productinfo{
+                .trandLable{
+                    font-size: 40px;
+                }
+                .info{
+                    font-size: 25px;
+                }
+                .moreInfo{
+                    h4{
+                    }
+                }
+            }
+            .productContact{
+                .title{
+                    font-size: 35px;
+                }
+                .price{
+                    font-size: 25px;
+                }
+                .order{
+                     .radio{
+                         width: 110px;
+                         font-size: 20px;
+                         .yellow{
+                         }
+                         .purple{
+                         }
+                    }
+                    .btn{
+                        font-size: 25px;
+                        &:hover{
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

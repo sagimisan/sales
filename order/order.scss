@@ -1,0 +1,65 @@
+@import "../HF";
+
+
+body{
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-image: url();
+    main{
+        
+        background-image:url(/img/basketball_court_man_aerial_view_144166_800x1420.jpg);
+        height: 95vh;
+        background-size: cover;
+        background-position: center ;
+        .box{
+            width: 100vw;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            h4{
+
+                color: #05f7ff;
+            }
+        }
+        
+    }
+}
+ 
+@media only screen and (min-width: 600px) { 
+    body{
+  
+        main{
+            height: 100vh;
+            background-image:url(/img/homebackround.jpg);
+            .box{
+                top: 25%;
+                color: white;
+                h4{
+                    margin-top: 20%;
+                    color: #05f7ff;
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (min-width: 992px) { 
+    body{
+        main{
+          .box{
+              top: 33%;
+              h1{
+                  font-size: 40px;
+              }
+              h4{
+                  font-size: 35px;
+              }
+          }
+        }
+    }
+}
